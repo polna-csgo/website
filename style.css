@@ -1318,6 +1318,11 @@ footer {
   font-size: 0.9rem;
 }
 
+.footer-bottom p {
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+}
+
 @media (max-width: 968px) {
   .footer-content {
     grid-template-columns: 1fr;

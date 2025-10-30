@@ -41,7 +41,7 @@
   </div>
 
   <div class="footer-bottom">
-    <p>&copy; 2025 Polna Cup CS2. Wszystkie prawa zastrzeżone.</p>
+    <p>&copy; 2025 Polna Cup. Wszystkie prawa zastrzeżone.</p>
     <p>Made by Kyryl Medvediev and Tymon Wilczewski</p>
   </div>
 </footer>
