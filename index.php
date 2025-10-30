@@ -33,7 +33,7 @@ require_once "header.php";
       </div>
       
       <div class="image-landscape">
-        <img src="tournament-action.jpg" alt="CS2 Tournament Action" />
+        <img src="images/tournament.jpg" alt="CS2 Tournament Action" />
       </div>
     </article>
 
@@ -53,7 +53,7 @@ require_once "header.php";
       </div>
       
       <div class="image-landscape">
-        <img src="team-photo.jpg" alt="School Esports Team" />
+        <img src="images/team.jpg" alt="School Esports Team" />
       </div>
     </article>
 
@@ -82,7 +82,7 @@ require_once "header.php";
       </div>
       
       <div class="image-landscape">
-        <img src="prizes.jpg" alt="Tournament Prizes and Trophies" />
+        <img src="images/prize.jpg" alt="Tournament Prizes and Trophies" />
       </div>
     </article>
 
