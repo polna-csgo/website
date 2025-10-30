@@ -163,7 +163,7 @@ main,
 .main-content {
   max-width: var(--max-content-width);
   margin: 0 auto;
-  padding: calc(var(--spacing-unit) * 6) calc(var(--spacing-unit) * 4);
+  padding: 0 calc(var(--spacing-unit) * 4) calc(var(--spacing-unit) * 6);
   animation: fadeIn 0.6s ease-out;
 }
 
@@ -903,6 +903,7 @@ dd {
   justify-content: center;
   animation: fadeIn 1s ease-out;
   margin-top: 0;
+  margin-bottom: 0;
 }
 
 .hero-image-large {
@@ -1106,18 +1107,16 @@ dd {
   border: none;
   box-shadow: none;
   background: transparent;
-  /* Ensure all internal sections expand to fill container */
   width: 100%;
 }
 
-/* Player rows now display horizontally with 4 columns */
 .player-row {
   display: grid;
   grid-template-columns: 2fr 1.5fr 1fr 1fr;
   gap: calc(var(--spacing-unit) * 3);
   margin-bottom: calc(var(--spacing-unit) * 4);
   align-items: end;
-  width: 100%; /* ← SZEROKOŚĆ WIERSZY ZAWODNIKÓW */
+  width: 100%;
 }
 
 .player-row .form-group {
@@ -1130,8 +1129,7 @@ dd {
   margin-bottom: calc(var(--spacing-unit) * 6);
   background: var(--bg-secondary);
   transition: all 0.3s ease;
-  /* Make sections fill container width */
-  width: 100%; /* ← SZEROKOŚĆ SEKCJI ZAWODNIKÓW */
+  width: 100%;
   box-sizing: border-box;
 }
 
@@ -1140,8 +1138,7 @@ dd {
   padding: calc(var(--spacing-unit) * 5);
   margin: calc(var(--spacing-unit) * 6) 0;
   border-left: 4px solid var(--text-primary);
-  /* Make sections fill container width */
-  width: 100%; /* ← SZEROKOŚĆ SEKCJI OPIEKUNA */
+  width: 100%;
   box-sizing: border-box;
 }
 
@@ -1150,8 +1147,7 @@ dd {
   padding: calc(var(--spacing-unit) * 5);
   margin: calc(var(--spacing-unit) * 6) 0;
   border-left: 4px solid var(--text-primary);
-  /* Make sections fill container width */
-  width: 100%; /* ← SZEROKOŚĆ SEKCJI KAPITANA */
+  width: 100%;
   box-sizing: border-box;
 }
 
@@ -1160,8 +1156,7 @@ dd {
   border: 2px solid var(--text-primary);
   padding: calc(var(--spacing-unit) * 4);
   margin: calc(var(--spacing-unit) * 6) 0;
-  /* Make sections fill container width */
-  width: 100%; /* ← SZEROKOŚĆ BLOKU INFORMACJI */
+  width: 100%;
   box-sizing: border-box;
 }
 
@@ -1179,7 +1174,6 @@ dd {
 }
 
 .info-box li {
-  /* Fixed bullet positioning to be centered vertically on the left */
   margin-bottom: calc(var(--spacing-unit) * 2);
   padding-left: calc(var(--spacing-unit) * 4);
   position: relative;
@@ -1187,7 +1181,6 @@ dd {
 }
 
 .info-box li::before {
-  /* Bullet centered vertically using line-height matching the text */
   content: "•";
   position: absolute;
   left: calc(var(--spacing-unit) * 1);
@@ -1229,7 +1222,6 @@ dd {
   transform: translateX(-4px);
 }
 
-/* Added complete footer styling with black background and white text */
 footer {
   background: var(--text-primary);
   color: var(--bg-main);
@@ -1360,13 +1352,11 @@ footer {
   }
 
   .form-container {
-    /* Adjusted responsive padding */
     padding: calc(var(--spacing-unit) * 5);
     max-width: 100%;
   }
 
   .player-row {
-    /* Responsive layout for mobile - stack all fields */
     grid-template-columns: 1fr;
     gap: calc(var(--spacing-unit) * 2);
   }
@@ -1420,7 +1410,7 @@ footer {
 .navbar-container {
   max-width: 1400px;
   margin: 0 auto;
-  padding: calc(var(--spacing-unit) * 3) calc(var(--spacing-unit) * 4);
+  padding: calc(var(--spacing-unit) * 2.5) calc(var(--spacing-unit) * 4);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1458,6 +1448,8 @@ footer {
   padding: calc(var(--spacing-unit) * 1.5) calc(var(--spacing-unit) * 2);
   border-bottom: 2px solid transparent;
   transition: all 0.3s ease;
+  display: inline-block;
+  line-height: 1.2;
 }
 
 .navbar-link:hover {
@@ -1748,7 +1740,6 @@ footer {
   }
 }
 
-/* Added styles for new form structure with textarea fields */
 .captain-section-new,
 .players-section-new {
   border: 2px solid var(--border-light);
@@ -1836,7 +1827,6 @@ textarea::placeholder {
   box-shadow: var(--shadow-md);
 }
 
-/* Added styles for individual player cards with all fields */
 .players-section-individual {
   border: 2px solid var(--border-light);
   padding: calc(var(--spacing-unit) * 5);
