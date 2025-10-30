@@ -92,9 +92,9 @@ require_once "header.php";
       <a href="form.php" class="btn btn-large">
         <span>Wypełnij formularz zgłoszeniowy</span>
       </a>
-      <p class="cta-secondary">
+      <!-- <p class="cta-secondary">
         <a href="signups.php" class="link-secondary">Zobacz już zgłoszone drużyny →</a>
-      </p>
+      </p> -->
     </div>
   </section>
 </main>
