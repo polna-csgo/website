@@ -11,7 +11,6 @@ require_once "header.php";
 
   <div class="contact-content">
     <div class="contact-grid">
-      <!-- Contact Information -->
       <div class="contact-info-section">
         <h2>Informacje kontaktowe</h2>
         
@@ -40,7 +39,6 @@ require_once "header.php";
         </div>
       </div>
 
-      <!-- Contact Form -->
       <div class="contact-form-section">
         <h2>Wyślij wiadomość</h2>
         <form class="contact-form" method="post" action="">
@@ -71,7 +69,6 @@ require_once "header.php";
       </div>
     </div>
 
-    <!-- FAQ Section -->
     <div class="faq-section">
       <h2>Najczęściej zadawane pytania</h2>
       
@@ -92,7 +89,7 @@ require_once "header.php";
         <dd>Szczegóły dotyczące nagród zostaną ogłoszone wkrótce. Przygotowujemy atrakcyjne nagrody dla najlepszych drużyn!</dd>
 
         <dt>Jak mogę śledzić wyniki turnieju?</dt>
-        <dd>Wszystkie wyniki będą publikowane na naszej stronie oraz na social mediach. Transmisje z meczów będą dostępne na YouTube.</dd>
+        <dd>Wszystkie wyniki będą publikowane na naszej stronie oraz na social mediach. Transmisje z meczów będą dostępne na platformie Twitch.</dd>
       </dl>
     </div>
   </div>

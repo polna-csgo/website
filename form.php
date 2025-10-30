@@ -151,7 +151,6 @@ $schools = loadSchools();
             </div>
         </fieldset>
 
-        <!-- Individual player sections with all required fields -->
         <fieldset class="players-section-individual">
             <legend>Zawodnicy podstawowi (5 osób)</legend>
             
@@ -240,7 +239,6 @@ $schools = loadSchools();
             <?php endfor; ?>
         </fieldset>
 
-        <!-- Added guardian/supervisor section with all required fields -->
         <fieldset class="coach-section">
             <legend>Dane opiekuna drużyny</legend>
             

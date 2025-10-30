@@ -11,7 +11,6 @@ require_once "init.php";
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
-<!-- Added navigation bar with links -->
 <nav class="navbar">
     <div class="navbar-container">
         <a href="index.php" class="navbar-brand">Polna Cup CS2</a>

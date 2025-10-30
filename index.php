@@ -2,7 +2,6 @@
 require_once "header.php";
 ?>
 <main class="main-content">
-  <!-- Hero section with large image -->
   <section class="hero-section-full">
     <div class="hero-image-large">
       <img src="images/main.png" alt="Polna Cup CS2 Tournament" />
@@ -16,7 +15,6 @@ require_once "header.php";
     </div>
   </section>
 
-  <!-- Full-width content sections with landscape images -->
   <section class="content-section">
     <article class="content-block">
       <h2>Na czym polega Polna Cup?</h2>

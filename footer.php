@@ -1,4 +1,3 @@
-<!-- Complete footer redesign with organizer info and social media links -->
 <footer>
   <div class="footer-content">
     <div class="footer-section">
