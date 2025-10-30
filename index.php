@@ -2,7 +2,7 @@
 require_once "header.php";
 ?>
 
-<h1>Polancup?</h1>
+<h1>Polna Cup</h1>
 <a href="form.php">Zgłoś drużynę</a>
 
 <?
