@@ -18,24 +18,24 @@ require_once "header.php";
         <div class="contact-card">
           <div class="contact-icon">✉</div>
           <h3>Email</h3>
-          <p><a href="mailto:kontakt@polnacup.pl">kontakt@polnacup.pl</a></p>
-          <p class="contact-description">Odpowiadamy w ciągu 24 godzin</p>
+          <p><a href="mailto:kontakt@polnacup.pl">polnacup@technikumpolna.pl</a></p>
+          <p class="contact-description">Odpowiadamy na wszelkie pytania</p>
         </div>
 
         <div class="contact-card">
           <div class="contact-icon">📱</div>
           <h3>Social Media</h3>
           <div class="social-links-contact">
-            <a href="https://youtube.com/@polnacup" target="_blank" rel="noopener">YouTube</a>
-            <a href="https://instagram.com/polnacup" target="_blank" rel="noopener">Instagram</a>
-            <a href="https://tiktok.com/@polnacup" target="_blank" rel="noopener">TikTok</a>
+            <a href="https://www.twitch.tv/tkkpolnacup" target="_blank" rel="noopener">Twitch</a>
+            <a href="https://www.instagram.com/polna.cup" target="_blank" rel="noopener">Instagram</a>
+            <a href="https://www.tiktok.com/@polna.cup" target="_blank" rel="noopener">TikTok</a>
           </div>
         </div>
 
         <div class="contact-card">
           <div class="contact-icon">📍</div>
           <h3>Lokalizacja</h3>
-          <p>Warszawa, Polska</p>
+          <p>Ul. Polna 7, 00-625 Warszawa, Polska</p>
           <p class="contact-description">Turniej dla warszawskich szkół średnich</p>
         </div>
       </div>

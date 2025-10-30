@@ -10,15 +10,15 @@
     <div class="footer-section">
       <h3>Social Media</h3>
       <div class="social-links">
-        <a href="https://youtube.com/@polnacup" class="social-link" target="_blank" rel="noopener">
+        <a href="https://www.twitch.tv/tkkpolnacup" class="social-link" target="_blank" rel="noopener">
           <span class="social-icon">▶</span>
-          <span>YouTube</span>
+          <span>Twitch</span>
         </a>
-        <a href="https://instagram.com/polnacup" class="social-link" target="_blank" rel="noopener">
+        <a href="https://www.instagram.com/polna.cup" class="social-link" target="_blank" rel="noopener">
           <span class="social-icon">📷</span>
           <span>Instagram</span>
         </a>
-        <a href="https://tiktok.com/@polnacup" class="social-link" target="_blank" rel="noopener">
+        <a href="https://www.tiktok.com/@polna.cup" class="social-link" target="_blank" rel="noopener">
           <span class="social-icon">🎵</span>
           <span>TikTok</span>
         </a>
@@ -30,7 +30,7 @@
       <div class="contact-info">
         <div class="contact-item">
           <strong>Email:</strong>
-          <a href="mailto:kontakt@polnacup.pl">kontakt@polnacup.pl</a>
+          <a href="mailto:kontakt@polnacup.pl">polnacup@technikumpolna.pl</a>
         </div>
         <div class="contact-item">
           <strong>Pytania:</strong>
