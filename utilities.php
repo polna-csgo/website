@@ -12,7 +12,6 @@ function ReadEnv(): void {
 }
 
 function loadSchoolsFromDraft($draft = 'draft.txt') {
-
     $lines = file(__DIR__ . '/' . $draft);
     $schools = [];
     $forbidden = [
@@ -30,4 +29,60 @@ function loadSchoolsFromDraft($draft = 'draft.txt') {
         }
     }
     return array_values(array_unique($schools));
+}
+
+function loadSchools() {
+    return loadSchoolsFromDraft();
+}
+
+function isSchoolAllowed($school) {
+    $schools = loadSchools();
+    return in_array($school, $schools, true);
+}
+
+function loadSignups() {
+    $file = $_ENV["DataPath"];
+    if (!file_exists($file)) return [];
+
+    $key = base64_decode($_ENV["EncKey"]);
+    $json = json_decode(file_get_contents($file), true);
+
+    $iv = base64_decode($json['iv']);
+    $tag = base64_decode($json['tag']);
+    $ciphertext = base64_decode($json['data']);
+
+    $decrypted = openssl_decrypt(
+        $ciphertext,
+        "aes-256-gcm",
+        $key,
+        OPENSSL_RAW_DATA,
+        $iv,
+        $tag
+    );
+
+    return $decrypted ? json_decode($decrypted, true) : [];
+}
+
+function saveSignups($data) {
+    $key = base64_decode($_ENV["EncKey"]);
+    $iv = random_bytes(12);
+
+    $plaintext = json_encode($data, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
+    $tag = "";
+    $ciphertext = openssl_encrypt(
+        $plaintext,
+        "aes-256-gcm",
+        $key,
+        OPENSSL_RAW_DATA,
+        $iv,
+        $tag
+    );
+
+    $json = json_encode([
+        "iv" => base64_encode($iv),
+        "tag" => base64_encode($tag),
+        "data" => base64_encode($ciphertext)
+    ], JSON_PRETTY_PRINT);
+
+    file_put_contents($_ENV["DataPath"], $json);
 }

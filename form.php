@@ -3,24 +3,6 @@ $title = "Formularz Zgłoszeniowy";
 require_once "header.php";
 require_once "utilities.php";
 
-function loadSchools() {
-    return loadSchoolsFromDraft();
-}
-
-function isSchoolAllowed($school) {
-    $schools = loadSchools();
-    return in_array($school, $schools, true);
-}
-
-function loadSignups() {
-    $file = __DIR__ . '/signups.json';
-    return file_exists($file) ? json_decode(file_get_contents($file), true) : [];
-}
-
-function saveSignups($data) {
-    file_put_contents(__DIR__ . '/signups.json', json_encode($data, JSON_PRETTY_PRINT|JSON_UNESCAPED_UNICODE));
-}
-
 function getSchoolQueue($signups, $school) {
     $queue = [];
     foreach ($signups as $signup) {
