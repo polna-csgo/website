@@ -5,7 +5,7 @@ require_once "header.php";
   <!-- Hero section with large image -->
   <section class="hero-section-full">
     <div class="hero-image-large">
-      <img src="hero-image.jpg" alt="Polna Cup CS2 Tournament" />
+      <img src="images/main.png" alt="Polna Cup CS2 Tournament" />
     </div>
     <div class="hero-overlay">
       <h1>Polna Cup CS2</h1>
