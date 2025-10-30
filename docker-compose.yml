@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  web:
+    build: .
+    container_name: polnacup
+    ports:
+      - "8080:80"   # Accessible locally at http://localhost:8080
+    volumes:
+      - .:/var/www/html
+    restart: unless-stopped
