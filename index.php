@@ -45,7 +45,7 @@ require_once "header.php";
         <ol class="steps-list">
           <li>Zbierz drużynę — 5 podstawowych + 2 rezerwowych graczy ze swojej szkoły</li>
           <li>Ustal opiekuna drużyny (nauczyciel lub wychowawca z Twojej szkoły)</li>
-          <li>Przygotuj dane wszystkich zawodników (imiona, nazwiska, numery legitymacji)</li>
+          <li>Przygotuj dane wszystkich zawodników (imiona, nazwiska, numery legitymacji, adresy email, numery telefonów, ID kont na Steam, Discord)</li>
           <li>Wypełnij formularz zgłoszeniowy online i czekaj na potwierdzenie mailowe</li>
         </ol>
         
