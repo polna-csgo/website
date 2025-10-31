@@ -63,6 +63,8 @@ if ($isCsv) {
 
 ?>
 <main class="main-content">
+  <a href="?form=csv">Pobierz zespoły (CSV)</a>
+  <a href="?form=csvp">Pobierz graczy (CSV)</a>
   <table>
     <tr>
         <th></th>
