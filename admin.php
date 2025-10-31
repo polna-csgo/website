@@ -30,8 +30,8 @@ if (!isset($_SESSION["adminLogin"])) {
   <table>
     <tr>
         <th></th>
-        <th>Team</th>
-        <th>Szkola</th>
+        <th>Zespół</th>
+        <th>Szkoła</th>
         <th>Kapitan</th>
         <th>Opiekun</th>
         <th>Gracze</th>
