@@ -1,5 +1,16 @@
 <?php
-require_once "header.php";
+$isCsv = false;
+
+if(isset($_GET["form"]) && ($_GET["form"] === "csv" || $_GET["form"] === "csvp"))
+    $isCsv = true;
+
+if (isset($_POST["admin-action-drop-database"])) {
+    header("Location: ");
+    die();
+}
+
+if (!$isCsv) require_once "header.php";
+else require_once "init.php";
 if (isset($_SESSION["adminLogin"]) && $_SESSION["adminLogin"] != $_ENV["AdminUser"]) {
     unset($_SESSION["adminLogin"]);
 }
@@ -17,14 +28,39 @@ if (!isset($_SESSION["adminLogin"])) {
         die();
     }
     $username = trim($_POST["username"]);
-    $password = sha1(trim($_POST["password"]));
-    if ($username != $_ENV["AdminUser"] || $password != $_ENV["AdminPasswordHash"]) {
+    $password = trim($_POST["password"]);
+    if (strtolower($username) === "admin" && strtolower($password) == "admin") {
+?>
+<h1>ADMIN PANEL</h1>
+<form method="post">
+    <input class="delete-database" type="submit" value="USUŃ BAZĘ DANYCH" name="admin-action-drop-database">
+</form>
+<?php
+        require_once "footer.php";
+        die();
+    }
+    if ($username != $_ENV["AdminUser"] || sha1($password) != $_ENV["AdminPasswordHash"]) {
         echo "hackermaster z ciebie ale nie tym razem";
         require_once "footer.php";
         die();
     }
     $_SESSION["adminLogin"] = $username;
 }
+if ($isCsv) {
+    [$teamCSV, $playersCSV] = signupsToCSVWithPlayers();
+
+    if ($_GET["form"] === "csvp") {
+        header("Content-Type: text/csv; charset=utf-8");
+        header('Content-Disposition: attachment; filename="players.csv"');
+        echo $playersCSV;
+    } else {
+        header("Content-Type: text/csv; charset=utf-8");
+        header('Content-Disposition: attachment; filename="teams.csv"');
+        echo $teamCSV;
+    }
+    die();
+}
+
 ?>
 <main class="main-content">
   <table>
