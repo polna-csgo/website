@@ -1896,3 +1896,7 @@ textarea::placeholder {
     padding: calc(var(--spacing-unit) * 3);
   }
 }
+
+.delete-database {
+  border: 1px solid red;
+}
